@@ -1,0 +1,74 @@
+[
+  {
+    "id": "note_001",
+    "title": "NLP第一章笔记 - 自然语言处理概述",
+    "course": "自然语言处理",
+    "author": "张三",
+    "created_at": "2025-09-15",
+    "tags": ["NLP", "概述", "基础"],
+    "content": "自然语言处理（NLP）是人工智能的一个重要分支，主要研究如何让计算机理解和生成人类语言。NLP的主要任务包括：分词、词性标注、命名实体识别、句法分析、语义分析、机器翻译、文本分类、情感分析等。NLP的发展经历了规则方法、统计方法和深度学习方法三个阶段。"
+  },
+  {
+    "id": "note_002",
+    "title": "词向量与Word2Vec笔记",
+    "course": "自然语言处理",
+    "author": "李四",
+    "created_at": "2025-09-22",
+    "tags": ["词向量", "Word2Vec", "CBOW", "Skip-gram"],
+    "content": "Word2Vec是Google在2013年提出的词向量模型，包括CBOW和Skip-gram两种架构。CBOW通过上下文预测中心词，Skip-gram通过中心词预测上下文。训练技巧包括负采样（Negative Sampling）和层次Softmax（Hierarchical Softmax）。词向量可以捕捉词语间的语义关系，如king-man+woman≈queen。"
+  },
+  {
+    "id": "note_003",
+    "title": "Transformer架构详解",
+    "course": "自然语言处理",
+    "author": "张三",
+    "created_at": "2025-10-08",
+    "tags": ["Transformer", "注意力机制", "Self-Attention"],
+    "content": "Transformer由Vaswani等人在2017年的论文Attention is All You Need中提出。核心创新是自注意力机制（Self-Attention），允许模型在处理序列时关注不同位置的信息。多头注意力机制（Multi-Head Attention）让模型能同时关注不同的表示子空间。Transformer包含编码器（Encoder）和解码器（Decoder）两部分，使用位置编码（Positional Encoding）来处理序列位置信息。"
+  },
+  {
+    "id": "note_004",
+    "title": "BERT预训练模型笔记",
+    "course": "自然语言处理",
+    "author": "王五",
+    "created_at": "2025-10-15",
+    "tags": ["BERT", "预训练", "MLM", "NSP"],
+    "content": "BERT（Bidirectional Encoder Representations from Transformers）是Google提出的预训练语言模型。采用两个预训练任务：掩码语言模型（MLM）和下一句预测（NSP）。BERT使用Transformer的编码器部分，可以通过微调（Fine-tuning）应用于各种下游NLP任务，如文本分类、问答系统、命名实体识别等。BERT-base有12层Transformer，BERT-large有24层。"
+  },
+  {
+    "id": "note_005",
+    "title": "文本分类方法总结",
+    "course": "自然语言处理",
+    "author": "李四",
+    "created_at": "2025-10-22",
+    "tags": ["文本分类", "CNN", "RNN", "LSTM"],
+    "content": "文本分类是NLP的基础任务。传统方法包括朴素贝叶斯、SVM等；深度学习方法包括TextCNN（使用不同大小的卷积核提取n-gram特征）、TextRNN（使用LSTM/GRU捕捉长距离依赖）、以及基于Transformer的方法。评估指标包括准确率、精确率、召回率和F1分数。"
+  },
+  {
+    "id": "note_006",
+    "title": "序列标注与CRF笔记",
+    "course": "自然语言处理",
+    "author": "张三",
+    "created_at": "2025-11-05",
+    "tags": ["序列标注", "CRF", "NER", "BiLSTM-CRF"],
+    "content": "序列标注任务包括分词、词性标注和命名实体识别（NER）。常用标注方案有BIO和BIOES。CRF（条件随机场）可以建模标签间的转移关系。BiLSTM-CRF是经典的序列标注模型，BiLSTM提取特征，CRF层保证标签序列的合法性。现代方法多使用BERT+CRF或直接用BERT进行token分类。"
+  },
+  {
+    "id": "note_007",
+    "title": "机器翻译发展历程",
+    "course": "自然语言处理",
+    "author": "王五",
+    "created_at": "2025-11-12",
+    "tags": ["机器翻译", "Seq2Seq", "注意力", "NMT"],
+    "content": "机器翻译经历了基于规则、基于统计和神经机器翻译三个阶段。Seq2Seq模型使用编码器-解码器架构。注意力机制解决了长序列信息丢失问题。Transformer架构极大提升了翻译质量。当前主流方法是基于大规模预训练的多语言模型，如mBART、mT5等。BLEU是常用的机器翻译评估指标。"
+  },
+  {
+    "id": "note_008",
+    "title": "期中考试复习要点",
+    "course": "自然语言处理",
+    "author": "赵六",
+    "created_at": "2025-10-30",
+    "tags": ["复习", "考试", "重点"],
+    "content": "期中考试范围：第1-5章。重点内容：1）分词算法（正向最大匹配、逆向最大匹配）；2）HMM词性标注；3）Word2Vec原理和训练过程；4）Transformer自注意力计算过程；5）BERT的预训练任务和微调方法。题型包括选择题、简答题和计算题。"
+  }
+]
