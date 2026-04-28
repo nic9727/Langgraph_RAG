@@ -21,8 +21,8 @@ from openai import OpenAI
 logger = logging.getLogger(__name__)
 
 # ===================== 硬编码的 API 配置 =====================
-API_KEY = "sk-45ed28d6839841b18f585718edda3164"
-BASE_URL = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+API_KEY = "你的api"
+BASE_URL = "你的url"
 MODEL_NAME = "qwen-plus"
 
 # 全局单例客户端
